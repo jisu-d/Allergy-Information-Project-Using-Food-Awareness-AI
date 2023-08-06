@@ -1,5 +1,5 @@
 
-import './CameraComponent.css'
+import './CameraDiv.css'
 import React, { useState, useEffect, useRef, FC } from 'react';
 
 interface iCameraDiv{

@@ -1,8 +1,10 @@
+'use client'
+
 import React, { useState, FC } from 'react';
-import CameraDiv from './CameraComponent';
+import CameraDiv from './CameraDiv';
 import FoodInfoDiv from './foodInfoDiv';
 
-const App: FC = () => {
+export default function Page() {
   let [DataURL, setDataURL] = useState<string>('');
   return (
     <div className='main'>
@@ -14,6 +16,4 @@ const App: FC = () => {
       </div>
     </div>
   );
-};
-
-export default App;
+}

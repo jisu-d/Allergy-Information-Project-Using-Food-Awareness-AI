@@ -14,7 +14,6 @@ const FoodInfoDiv: FC<ifoodInfoDiv> = ({DataURL}) => {
             setSliceDataURL(DataURL.slice(DataURL.indexOf(',') + 1))
         } 
     }, [DataURL]);
-    //여기서 sliceDataURL에 저장된 데이터로 요청 보낼려고 합니다..
     return (
         <>
             {}
