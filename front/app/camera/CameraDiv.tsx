@@ -17,7 +17,7 @@ const CameraDiv: FC<iCameraDiv> = ({onDataURLChange}) => {
     let [dataUrl, setdataUrl] = useState<string>('')
 
     useEffect(() => {
-        const constraints = { audio: true, video: { width: 1280, height: 720 } }
+        const constraints = { audio: false, video: { width: 1280, height: 720 } }
 
         async function setupCamera() {
             try {
