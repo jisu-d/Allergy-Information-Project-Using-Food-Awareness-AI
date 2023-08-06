@@ -1,0 +1,15 @@
+.main-container{
+    display: flex;
+} 
+
+.live-camera{
+    display: flex;
+}
+
+.user-video-container{
+    
+}
+
+.out-camera{
+    display: flex;
+}
