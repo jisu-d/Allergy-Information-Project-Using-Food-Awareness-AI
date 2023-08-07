@@ -16,6 +16,8 @@ const CameraDiv: FC<iCameraDiv> = ({onDataURLChange}) => {
 
     let [dataUrl, setdataUrl] = useState<string>('')
 
+    let [base64WebCamCapture, setbase64WebCamCapture] = useState<string>('')
+
     useEffect(() => {
         const constraints = { audio: false, video: { width: 1280, height: 720 } }
 
@@ -41,9 +43,11 @@ const CameraDiv: FC<iCameraDiv> = ({onDataURLChange}) => {
                 canvasRef.current.height = videoRef.current.videoHeight;
                 context.drawImage(videoRef.current, 0, 0, canvasRef.current.width, canvasRef.current.height);
                 
-                setdataUrl(canvasRef.current.toDataURL('image/jpeg'))
-                
-                onDataURLChange(canvasRef.current.toDataURL('image/jpeg'))
+                let imgUrl = canvasRef.current.toDataURL('image/jpeg')
+
+                setdataUrl(imgUrl);
+                onDataURLChange(imgUrl);
+                setbase64WebCamCapture(imgUrl.replace("data:image/jpeg;base64,",""));
             }
         }
     };
