@@ -12,12 +12,13 @@ const FoodInfoDiv: FC<ifoodInfoDiv> = ({DataURL}) => {
     useEffect(() => {
         if (DataURL !== ''){
             setSliceDataURL(DataURL.slice(DataURL.indexOf(',') + 1))
-        } 
+        }
     }, [DataURL]);
     return (
-        <>
-            {}
-        </>
+        <div className="p-6 bg-white rounded-xl shadow-xl dark:bg-gray-800 max-w-cardSize w-full">
+            <h4 className="text-2xl font-bold dark:text-white">음식 성분 결과</h4>
+            
+        </div>
     );
 };
 
