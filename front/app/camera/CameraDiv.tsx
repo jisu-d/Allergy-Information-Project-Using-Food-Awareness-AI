@@ -17,7 +17,13 @@ const CameraDiv: FC<iCameraDiv> = ({onDataURLChange}) => {
     let [dataUrl, setdataUrl] = useState<string>('')
 
     useEffect(() => {
-        const constraints = { audio: false, video: true, facingMode: { exact: "environment" } }
+        const constraints = { 
+            audio: true,
+            video: {
+                facingMode: { exact: "environment" },
+            },
+        }
+        
 
         async function setupCamera() {
             try {
