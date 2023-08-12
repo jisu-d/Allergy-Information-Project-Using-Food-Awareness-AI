@@ -17,3 +17,10 @@ html, body{
     justify-content: center;
     flex-direction: column
 }
+
+@media (prefers-color-scheme: dark) {
+    html, body {
+        --tw-bg-opacity: 1;
+        background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    }
+}
