@@ -1,0 +1,108 @@
+2023-08-12 22:04:56,185 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3456
+2023-08-12 22:04:56,185 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-08-12 22:05:30,589 - server - ERROR - Exception on /ai [POST]
+Traceback (most recent call last):
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/server.py", line 30, in ai
+    if (not err):
+UnboundLocalError: local variable 'err' referenced before assignment
+2023-08-12 22:05:30,592 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:05:30] "[35m[1mPOST /ai HTTP/1.1[0m" 500 -
+2023-08-12 22:05:30,699 - server - ERROR - Exception on /ai [POST]
+Traceback (most recent call last):
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/server.py", line 30, in ai
+    if (not err):
+UnboundLocalError: local variable 'err' referenced before assignment
+2023-08-12 22:05:30,700 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:05:30] "[35m[1mPOST /ai HTTP/1.1[0m" 500 -
+2023-08-12 22:06:27,981 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3456
+2023-08-12 22:06:27,982 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-08-12 22:06:46,517 - server - ERROR - Exception on /ai [POST]
+Traceback (most recent call last):
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/server.py", line 30, in ai
+    if (err != False):
+UnboundLocalError: local variable 'err' referenced before assignment
+2023-08-12 22:06:46,518 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:06:46] "[35m[1mPOST /ai HTTP/1.1[0m" 500 -
+2023-08-12 22:06:46,601 - server - ERROR - Exception on /ai [POST]
+Traceback (most recent call last):
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/server.py", line 30, in ai
+    if (err != False):
+UnboundLocalError: local variable 'err' referenced before assignment
+2023-08-12 22:06:46,602 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:06:46] "[35m[1mPOST /ai HTTP/1.1[0m" 500 -
+2023-08-12 22:06:46,703 - server - ERROR - Exception on /ai [POST]
+Traceback (most recent call last):
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/.venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/wax/dev/Allergy-Information-Project-Using-Food-Awareness-AI/aiBackend/server.py", line 30, in ai
+    if (err != False):
+UnboundLocalError: local variable 'err' referenced before assignment
+2023-08-12 22:06:46,704 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:06:46] "[35m[1mPOST /ai HTTP/1.1[0m" 500 -
+2023-08-12 22:07:19,210 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3456
+2023-08-12 22:07:19,211 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-08-12 22:07:22,624 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:07:22] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:07:22,721 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:07:22] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:07:22,828 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:07:22] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:07:51,769 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3456
+2023-08-12 22:07:51,769 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-08-12 22:07:53,854 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:07:53] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:07:53,983 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:07:53] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:07:54,078 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:07:54] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:09:47,479 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:09:47] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:09:47,568 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:09:47] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:09:47,663 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:09:47] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:12:28,081 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:12:28] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:18:12,070 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:18:12] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:18:12,164 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:18:12] "POST /ai HTTP/1.1" 200 -
+2023-08-12 22:18:12,257 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2023 22:18:12] "POST /ai HTTP/1.1" 200 -
+2023-08-13 00:01:46,494 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3456
+2023-08-13 00:01:46,495 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-08-13 00:02:03,629 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2023 00:02:03] "POST /ai HTTP/1.1" 200 -
+2023-08-13 00:02:17,927 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2023 00:02:17] "POST /ai HTTP/1.1" 200 -
+2023-08-13 00:04:04,111 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3456
+2023-08-13 00:04:04,112 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-08-13 00:04:10,103 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2023 00:04:10] "POST /ai HTTP/1.1" 200 -
+2023-08-13 00:05:36,161 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3456
+2023-08-13 00:05:36,162 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-08-13 00:05:48,039 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2023 00:05:48] "POST /ai HTTP/1.1" 200 -
