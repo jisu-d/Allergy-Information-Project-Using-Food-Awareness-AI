@@ -50,7 +50,6 @@ def food_info(name):
 
 for food_name in search_arr:
     search_res.append(food_info(food_name))
-    # time.sleep(random.randint(2,4))
 
-for res in search_res:
-    print(f"{res.get('name')}|{res.get('ingredients')}")
+with open(f"food_search.json", "w") as file:
+    file.write(json.dumps(search_res, ensure_ascii=False))

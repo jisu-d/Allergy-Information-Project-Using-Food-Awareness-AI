@@ -1,0 +1,8 @@
+.venv
+.img
+.log
+docker-compose.yml
+test.py
+insert_db.py
+/img
+req_test.py

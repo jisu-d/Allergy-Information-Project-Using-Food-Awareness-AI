@@ -1,9 +1,13 @@
+import os
+import sys
+import json
+import traceback
+import base64
+from io import BytesIO
+from logging import config, getLogger
+import numpy as np
 from keras.models import load_model  # TensorFlow is required for Keras to work
 from PIL import Image, ImageOps  # Install pillow instead of PIL
-import numpy as np
-from logging import config, getLogger
-import traceback
-import json
 
 model_path = "./models/v2/"
 
@@ -22,7 +26,7 @@ model = load_model(f"{model_path}keras_model.h5", compile=False)
 # Load the labels
 origin_class_names = open(f"{model_path}labels.txt", "r").readlines()
 
-def check_food_category(img_path:str):
+def check_food_category(base64_image_string:str):
     try:
         class_names = origin_class_names
         # Create the array of the right shape to feed into the keras model
@@ -31,7 +35,7 @@ def check_food_category(img_path:str):
         data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
         # Replace this with the path to your image
-        image = Image.open(img_path).convert("RGB")
+        image = Image.open(BytesIO(base64.b64decode(base64_image_string))).convert("RGB")
 
         # resizing the image to be at least 224x224 and then cropping from the center
         size = (224, 224)
@@ -55,7 +59,7 @@ def check_food_category(img_path:str):
         # Print prediction and confidence score
         return True, class_name[2:].replace("\n",""), confidence_score
     except Exception as e:
-        print(e)
-        traceback.format_exc()
-        logger.critical(e)
+        _, _, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        logger.critical(f"File:{fname} - Line:{exc_tb.tb_lineno} - {e}")
         return False, None, None

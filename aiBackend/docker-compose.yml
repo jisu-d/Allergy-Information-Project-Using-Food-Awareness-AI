@@ -1,0 +1,35 @@
+version: "3.7"
+
+services:
+  flask:
+    build: ./flask
+    container_name: flask
+    depends_on:
+      - db
+    restart: always      
+    expose:
+      - "5000"
+    volumes:
+      - ./docker/flask:/app
+  db:
+    image: mysql
+    restart: always
+    expose:
+      - 3306
+    env_file:
+      - .env
+    # volumes:
+    #   - ${PWD}/docker/mysql:/var/lib/mysql
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+  nginx:
+    build: ./nginx
+    depends_on:
+      - flask
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./docker/nginx:/etc/nginx/

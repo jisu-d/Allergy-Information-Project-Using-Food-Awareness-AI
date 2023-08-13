@@ -1,0 +1,14 @@
+.venv
+backend_legacy
+img
+*.jpg
+.env
+log
+insert_db.py
+req_test.py
+test.py
+fs
+v1
+__pychche__
+*.pyc
+docker
